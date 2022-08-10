@@ -83,8 +83,8 @@ DATABASES = {
         'NAME': 'portfolio',
         'USER': 'postgres',
         "PASSWORD": 'forth',
-        # 'HOST': 'https://aabhishek.herokuapp.com/'
-        'HOST': 'localhost'
+        'HOST': 'https://aabhishek.herokuapp.com/'
+        # 'HOST': 'localhost'
     }
 }
 
