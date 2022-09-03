@@ -27,10 +27,10 @@ DEBUG = True
 
 
 # production
-ALLOWED_HOSTS = ['https://aabhishek.herokuapp.com/']
+# ALLOWED_HOSTS = ['https://aabhishek.herokuapp.com/']
 
 # staging
-# ALLOWED_HOSTS = ['localhost','127.0.0.1']
+ALLOWED_HOSTS = ['localhost','127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [
@@ -58,8 +58,7 @@ ROOT_URLCONF = 'porfolio_web.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates']
-        ,
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -83,8 +82,8 @@ DATABASES = {
         'NAME': 'portfolio',
         'USER': 'postgres',
         "PASSWORD": 'forth',
-        'HOST': 'https://aabhishek.herokuapp.com/'
-        # 'HOST': 'localhost'
+        # 'HOST': 'https://aabhishek.herokuapp.com/'
+        'HOST': 'localhost'
     }
 }
 
@@ -127,17 +126,10 @@ STATICFILES_DIRS = [
 ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'assets')
 
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST_USER = 'starkabhishek29@gmail.com'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-EMAIL_HOST_PASSWORD = "xquzloczyeavblaw"
