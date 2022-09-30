@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-)_gz1iwy=xb54kj5!pxeo4cn*mv*hn15m!-%x9f6v1b))n1qw@
 DEBUG = False
 
 # production
-ALLOWED_HOSTS = ['https://aabhishek.herokuapp.com','/']
+ALLOWED_HOSTS = ['https://aabhishek.herokuapp.com', "*"]
 
 # staging
 # ALLOWED_HOSTS = ['localhost','127.0.0.1']
@@ -81,7 +81,7 @@ DATABASES = {
         'NAME': 'portfolio',
         'USER': 'postgres',
         "PASSWORD": 'forth',
-        'HOST': 'aabhishek.herokuapp.com/'
+        'HOST': 'https://aabhishek.herokuapp.com/'
         # 'HOST': 'localhost'
     }
 }
