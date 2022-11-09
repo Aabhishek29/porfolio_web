@@ -76,16 +76,16 @@ WSGI_APPLICATION = 'porfolio_web.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'portfolio',
-        'USER': 'postgres',
-        "PASSWORD": 'forth',
-        'HOST': 'https://aabhishek.herokuapp.com/'
-        # 'HOST': 'localhost'
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'portfolio',
+#         'USER': 'postgres',
+#         "PASSWORD": 'forth',
+#         'HOST': 'https://aabhishek.herokuapp.com/'
+#         # 'HOST': 'localhost'
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
